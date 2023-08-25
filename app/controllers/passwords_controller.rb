@@ -7,6 +7,7 @@ class PasswordsController < ApplicationController
   end
 
   def show
+    # nothing goes in these methods due to the private set password before action
   end
 
   def new
@@ -19,6 +20,23 @@ class PasswordsController < ApplicationController
       redirect_to @password
     else render :new, status: :unprocessable_entity
     end
+  end
+
+  def edit
+    # nothing goes in these methods due to the private set password before action
+  end
+
+  def update
+    if @password.update(password_params)
+      redirect_to @password
+    else
+      render :edit, status: :unprocessable_entity
+    end
+  end
+
+  def destroy
+    @password.destroy
+    redirect_to root_path
   end
 
   private
