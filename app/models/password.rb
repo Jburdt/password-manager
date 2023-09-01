@@ -20,5 +20,10 @@ class Password < ApplicationRecord
   def shareable_by?(user)
     user_passwords.find_by(user: user)&.shareable?
   end
+
+  def deletable_by?
+    user_passwords.find_by(user: user)&.deletable?
+  end
 end
+
 #TODO: UPDATE READ ME TO COMPLETE WHEN DONE!
