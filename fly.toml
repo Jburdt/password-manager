@@ -1,16 +1,13 @@
-# fly.toml app configuration file generated for patient-wind-1113 on 2023-09-05T14:39:35-04:00
+# fly.toml app configuration file generated for wandering-dust-3412 on 2023-09-14T16:40:39-04:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = "patient-wind-1113"
+app = "wandering-dust-3412"
 primary_region = "ord"
 console_command = "/rails/bin/rails console"
 
 [build]
-
-[deploy]
-  release_command = "./bin/rails db:prepare"
 
 [http_service]
   internal_port = 3000

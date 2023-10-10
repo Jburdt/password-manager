@@ -84,3 +84,8 @@ production:
   database: password_manager_production
   username: password_manager
   password: <%= ENV["PASSWORD_MANAGER_DATABASE_PASSWORD"] %>
+  active_record_encryption:
+    primary_key: beA7q9RadzKIp8CSMr3epfzdAlCPAe3n
+    deterministic_key: XcYCatYs4bpGat4OxhaLtN6lon3hiJSw
+    key_derivation_salt: LDeYRqdtqtUBSXPRekD73TWufV4XPxoh
+
