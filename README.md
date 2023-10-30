@@ -9,3 +9,8 @@
 - Postgrest database
 - Tailwind CSS
 - Deployed with Fly.io
+
+
+## To Run
+- Bin/dev 
+- start postgres server
