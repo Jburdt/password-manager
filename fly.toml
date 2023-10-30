@@ -1,9 +1,9 @@
-# fly.toml app configuration file generated for wandering-dust-3412 on 2023-09-14T16:40:39-04:00
+# fly.toml app configuration file generated for password on 2023-10-30T14:58:25-04:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = "wandering-dust-3412"
+app = "password"
 primary_region = "ord"
 console_command = "/rails/bin/rails console"
 
