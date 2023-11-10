@@ -14,3 +14,6 @@
 ## To Run
 - Bin/dev 
 - start postgres server
+
+## To Update changes
+- fly deploy

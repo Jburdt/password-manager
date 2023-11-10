@@ -33,7 +33,7 @@
     <div class="grid grid-cols-3">
       <div><%= user_password.user.email %></div>
       <div class="text-right"><%= user_password.role.titleize %></div>
-      <div class="text-right">
+      <div class="text-right ml-2">
         <%= button_to "Remove", password_share_path(@password, user_password.user), method: :delete, data: {turbo_confirm: "Are you sure?"} if current_user_password.shareable? %>
       </div>    
     </div>
